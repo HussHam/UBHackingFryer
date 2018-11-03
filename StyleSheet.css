@@ -24,3 +24,9 @@ img[src*="fryer"]:hover {
     90% { transform: translate(10px, 20px) rotate(0deg); }
     100% { transform: translate(10px, -20px) rotate(-10deg); }
   }
+
+body {
+  background-color: lightblue;
+  background-image: url("https://cdn.hipwallpaper.com/i/50/97/PhgNGi.jpg");
+  background-position-y: bottom;
+}
