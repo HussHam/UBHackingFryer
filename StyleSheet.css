@@ -30,3 +30,21 @@ body {
   background-image: url("https://cdn.hipwallpaper.com/i/50/97/PhgNGi.jpg");
   background-position-y: bottom;
 }
+
+.wrapper{
+    display: inline-block;
+    position:relative;
+  }
+  .drag1{
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid blue;
+  }
+  .fry{
+    border: 1px solid red;
+    position:absolute;
+    right: 10%;
+    top: 10%;
+    width: 25%;
+    max-width:25%;
+  }

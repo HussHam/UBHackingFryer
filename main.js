@@ -17,7 +17,7 @@ function previewFile(){
     }
 }
 
-previewFile();  //calls the function named previewFile()
+previewFile(); 
 
 function allowDrop(ev) {
     ev.preventDefault();
