@@ -6,7 +6,7 @@ h1 {
     text-decoration: underline;
 }
 
-img:hover {
+img[src*="fryer"]:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
   }
