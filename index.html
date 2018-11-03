@@ -12,15 +12,18 @@
        </h1>
 
         <input type="file" onchange="previewFile()"><br>
-        <img id = "drag1" src="" height="200"  draggable="true"
+        <img class = "toFry" id = "drag1" src="" height="200"  draggable="true"
         ondragstart="drag(event)">
 
       </header>
       <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
 
-    <img id ="fry" src = "fryer.png" alt="Deep Fryer" height = "800" width = "800" class="center">
+    <img class= "fryer" id ="fry" src = "fryer.png" alt="Deep Fryer" height = "800" width = "800" class="center">
   </div>
-     
+  <div class="container">
+      <img class="toFry">
+      <img class="fryer">
+    </div>
     <style>
         img {
         display:block;

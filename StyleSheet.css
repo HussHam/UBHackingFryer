@@ -30,21 +30,17 @@ body {
   background-image: url("https://cdn.hipwallpaper.com/i/50/97/PhgNGi.jpg");
   background-position-y: bottom;
 }
-
-.wrapper{
-    display: inline-block;
-    position:relative;
+.container {
+    position: relative;
+    width: 300px;/*Or whatever you want*/
   }
-  .drag1{
+  .fryer {
+    
     width: 100%;
-    max-width: 100%;
-    border: 1px solid blue;
   }
-  .fry{
-    border: 1px solid red;
-    position:absolute;
-    right: 10%;
-    top: 10%;
-    width: 25%;
-    max-width:25%;
+  .toFry {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
