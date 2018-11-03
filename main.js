@@ -3,7 +3,7 @@ var test = "test";
 
 function previewFile(){
     var preview = document.querySelector('img'); //selects the query named img
-    var file    = document.querySelector('input[type=file]').files[0]; //same as here
+    var file    = document.querySelector('input[type=file]').files[0]; //same\ as here
     var reader  = new FileReader();
 
     reader.onloadend = function () {
@@ -18,3 +18,17 @@ function previewFile(){
 }
 
 previewFile();  //calls the function named previewFile()
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
